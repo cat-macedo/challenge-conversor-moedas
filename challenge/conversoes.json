@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "moeda_inicial": "USD",
+    "moeda_final": "BRL",
+    "valor_original": 30.0,
+    "valor_convertido": 170.532
+  },
+  {
+    "id": 2,
+    "moeda_inicial": "EUR",
+    "moeda_final": "BRL",
+    "valor_original": 250.6,
+    "valor_convertido": 1624.79016
+  },
+  {
+    "id": 3,
+    "moeda_inicial": "JPY",
+    "moeda_final": "BRL",
+    "valor_original": 1500.0,
+    "valor_convertido": 59.28
+  }
+]

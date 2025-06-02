@@ -1,5 +1,6 @@
 package menu;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ControladorMenu {
@@ -8,16 +9,16 @@ public class ControladorMenu {
     private String moedaFinal;
 
     public void exibeMenu() {
-        System.out.println("*******************************************************");
-        System.out.println("1) Dólar [USD] ==> Real brasileiro [BRL]");
-        System.out.println("2) Real brasileiro [BRL] ==> Dólar australiano [AUD]");
-        System.out.println("3) Euro [EUR] ==> Real brasileiro [BRL]");
-        System.out.println("4) Iene Japonês [JPY] ==> Real brasileiro [BRL]");
-        System.out.println("5) Real brasileiro [BRL] ==> Dólar de Fiji [FJD]");
-        System.out.println("6) Dólar canadense [CAD] ==> Real brasileiro [BRL]");
+        System.out.println("\nOpções de conversão:");
+        System.out.println("1) Dólar [USD] → Real brasileiro [BRL]");
+        System.out.println("2) Real brasileiro [BRL] → Dólar australiano [AUD]");
+        System.out.println("3) Euro [EUR] → Real brasileiro [BRL]");
+        System.out.println("4) Iene Japonês [JPY] → Real brasileiro [BRL]");
+        System.out.println("5) Real brasileiro [BRL] → Dólar de Fiji [FJD]");
+        System.out.println("6) Dólar canadense [CAD] → Real brasileiro [BRL]");
         System.out.println("7) Sair");
-        System.out.println("Escolha uma opção válida:");
         System.out.println("*******************************************************");
+        System.out.println("Escolha uma opção válida:");
         System.out.print("> ");
 
         // Lê a opção do menu escolhida pelo usuário
@@ -31,7 +32,6 @@ public class ControladorMenu {
         if (this.opcaoUsuario == 1) {
             this.moedaInicial = "USD";
             this.moedaFinal = "BRL";
-
         }
         else if (this.opcaoUsuario == 2) {
             this.moedaInicial = "BRL";

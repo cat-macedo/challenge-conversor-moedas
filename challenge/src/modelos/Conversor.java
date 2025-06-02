@@ -24,8 +24,16 @@ public class Conversor {
     }
 
     // Função de conversão do valor pedido pelo usuário para moeda correspondente à opção do menu
-    public void converte(double valorUsuario) {
+    public double converte(double valorUsuario) {
         double resultado = valorUsuario * this.cotacaoMoedaFinal;
-        System.out.println(String.format("Valor %.2f [%s] corresponde ao valor final de =>>> %f [%s]\n", valorUsuario, this.moedaInicial, resultado, this.moedaFinal));
+        System.out.println("*******************************************************");
+        System.out.println(String.format("Valor %.2f [%s] corresponde ao valor final de → %f [%s]", valorUsuario, this.moedaInicial, resultado, this.moedaFinal));
+        System.out.println("*******************************************************");
+        return resultado;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Moeda inicial: " + this.moedaInicial + " - " + "Moeda final: " + this.moedaFinal;
+//    }
 }
