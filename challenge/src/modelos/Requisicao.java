@@ -10,18 +10,18 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class Requisicao {
-    private String moeda;
+    private String moedaInicial;
     private String endereco;
 
-    public Requisicao(String moeda) {
-        this.moeda = moeda;
+    public Requisicao(String moedaInicial) {
+        this.moedaInicial = moedaInicial;
     }
 
     public void montaEndereco() {
-         this.endereco = "https://v6.exchangerate-api.com/v6/784c31b2384e5f7585139112/latest/" + this.moeda;
+         this.endereco = "https://v6.exchangerate-api.com/v6/784c31b2384e5f7585139112/latest/" + this.moedaInicial;
     }
 
-    public void enviaRequisicao() throws IOException, InterruptedException {
+    public ConversorAPI enviaRequisicao() throws IOException, InterruptedException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(this.endereco)).build();
@@ -31,14 +31,7 @@ public class Requisicao {
 
         ConversorAPI conversorAPI = gson.fromJson(json, ConversorAPI.class);
         // System.out.println(conversorAPI);
-        System.out.println("Base: " + conversorAPI.base_code());
-        System.out.println("USD para ARS: " + conversorAPI.conversion_rates().get("ARS"));
-        System.out.println("USD para BRL: " + conversorAPI.conversion_rates().get("BRL"));
 
-        // retornar conversorAPI
-        // na main, passar ele para o construtor de Conversor, acho que junto com moeda inicial e final
-        // na classe Conversor, fazer a conversão em si
-        // na main, preparar o menu e o loop
-
+        return conversorAPI;
     }
 }
