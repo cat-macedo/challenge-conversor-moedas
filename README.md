@@ -11,9 +11,7 @@ Projeto desenvolvido durante a participação no curso ONE (Oracle Next Educatio
 -  Dólar canadense [CAD] ==> Real brasileiro [BRL]
 
 
-<p align="center">
-  <img src="" alt="GIF de demonstração" width=50%>
-</p>
+https://github.com/user-attachments/assets/eec77839-57bf-4915-a4ef-c42a5ff50684
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -36,4 +34,8 @@ Projeto desenvolvido durante a participação no curso ONE (Oracle Next Educatio
 
 - O programa exibe a cotação atual das moedas correspondentes à opção escolhida pelo usuário antes de pedir um valor para conversão.
     - Exemplo: Se o usuário escolher a opção 1, será exibido "Taxa atual: 1 USD = 5,684400 BRL"
-- 
+- Escrita do histórico de conversões do usuário em arquivo .JSON
+    - Exemplo:
+      <div>
+         <img src="https://github.com/user-attachments/assets/017412b1-7705-42f9-8b8c-193766c241a0" alt="Exemplo arquivo JSON">
+      </div>
