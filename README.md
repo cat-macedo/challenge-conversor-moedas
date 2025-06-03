@@ -39,3 +39,8 @@ https://github.com/user-attachments/assets/eec77839-57bf-4915-a4ef-c42a5ff50684
       <div>
          <img src="https://github.com/user-attachments/assets/017412b1-7705-42f9-8b8c-193766c241a0" alt="Exemplo arquivo JSON">
       </div>
+
+## 📚 Badge do challenge
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/56a0faae-0d97-4cc2-bc30-ce337f54ecf1" alt="badge" width=20%>
+</p>
